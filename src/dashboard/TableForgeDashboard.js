@@ -22,7 +22,7 @@ function TableForgeDashboard({ refresh, name, tableData }) {
   const stock = useMemo(
     () => [
       {
-        Header: 'Skladišče',
+        Header: 'Warehouse',
         accessor: 'acWarehouse'
       },
       {
@@ -30,11 +30,11 @@ function TableForgeDashboard({ refresh, name, tableData }) {
         accessor: 'acIdent'
       }, 
       {
-        Header: 'Količina',
+        Header: 'Quantity',
         accessor: 'anQty'
       }, 
       {
-        Header: 'Lokacija',
+        Header: 'Location',
         accessor: 'acLocation'
       },    
     ],
@@ -127,7 +127,7 @@ function TableForgeDashboard({ refresh, name, tableData }) {
           {'>>'}
         </button>{' '}
         <span>
-          Stran{' '}
+          Page{' '}
           <strong>
             {pageIndex + 1} od {pageOptions.length}
           </strong>{' '}

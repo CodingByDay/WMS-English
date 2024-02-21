@@ -73,33 +73,33 @@ export function Dashboard() {
        <div className = "menu"> 
 
             <button className="btn btn-primary dashboard" onClick = {()=>routeChange("listing")}>
-              Naročila
+              Orders
               <img alt={""} src='listing.png' width={100}/>
             </button>
 
             <button className="btn btn-primary dashboard" onClick = {()=>routeChange("transactions")}>
-              Transakcije
+              Transactions
               <img alt={""} src='transaction.png' width={100} />
             </button>
 
             <button className="btn btn-primary dashboard" onClick = {()=>routeChange("stock")}>
-              Zaloge
+              Stock
               <img alt={""} src='stock.png' width={100} />
             </button>
 
             <button className="btn btn-primary dashboard" onClick = {()=>routeChange("import")}>
-              Uvoz
+              Import
               <img alt={""} src='import.png' width={100} />
 
             </button>
 
             <button className="btn btn-primary dashboard" onClick = {()=>routeChange("settings")}>
-              Nastavitve
+              Settings
               <img alt={""} src='settings.png' width={100} />
             </button>
 
             <button className="btn btn-primary dashboard" onClick = {()=>routeChange("analytics")} id='settings-hover' >
-            Analitika
+            Analytics
             <img alt={""} src='monitor-icon.png' id='analytics' width={50} />
             </button>         
            

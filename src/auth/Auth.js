@@ -126,12 +126,12 @@ export default function Auth(props) {
     <div className="Auth-form-container">
   
         <div className="Auth-form-content">
-          <center><h1 className="riko-blue">Prijava</h1></center>
+          <center><h1 className="riko-blue">Log in</h1></center>
         
           
           <div className="form-group mt-3" id="password-div" >
 
-            <label htmlFor="password" className="label-gray">VNESITE GESLO</label>
+            <label htmlFor="password" className="label-gray">ENTER THE PASSWORD</label>
 
             <input
               id = "password"
@@ -154,7 +154,7 @@ export default function Auth(props) {
             {!mobile &&
             
                 <button className="btn btn-primary" id="loginButton"  onClick={handleClick}>
-                Prijava
+                Log in
                 </button>
             
             
@@ -163,7 +163,7 @@ export default function Auth(props) {
             {mobile &&
             
                 <button className="btn btn-primary" id="loginButton" onClick={() => {showMobileAlert()} }>
-                Prijava
+                Log in
                 </button>
             
             }

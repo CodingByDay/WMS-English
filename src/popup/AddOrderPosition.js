@@ -65,9 +65,9 @@ const AddOrderPosition = (props) => {
       ListingService.createPosition(toSend).then(response => { 
 
           if (response.Success) {
-            window.showAlert("Informacija", "Uspešno dodana pozicija!", "success")
+            window.showAlert("Information", "Created successfully", "success")
           } else {
-            window.showAlert("Informacija", "Napaka v podatkih!", "error")
+            window.showAlert("Information", "Error", "error")
           }
           onClose();
           props.communicate("position", "render")
@@ -137,7 +137,7 @@ const AddOrderPosition = (props) => {
           />
 
 
-          <label htmlFor="quantity">Količina:</label>
+          <label htmlFor="quantity">Quantity:</label>
 
           <input
             type="number"

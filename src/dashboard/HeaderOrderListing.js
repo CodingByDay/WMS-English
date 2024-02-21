@@ -292,11 +292,11 @@ export default function HeaderOrderListing(props) {
 
              <div className="filters-left">
 
-             <Select styles={customStyles} className='select-filterss' getOptionLabel={(option) => option.code} getOptionValue={(option) => option.code} formatOptionLabel={formatOptionLabel} placeholder={"Tip"} value={currentType} onChange={(e) => onChangeType(e)} options={types} id='documentType'/>
+             <Select styles={customStyles} className='select-filterss' getOptionLabel={(option) => option.code} getOptionValue={(option) => option.code} formatOptionLabel={formatOptionLabel} placeholder={"Type"} value={currentType} onChange={(e) => onChangeType(e)} options={types} id='documentType'/>
 
-             <Select styles={customStyles} className='select-filterss' placeholder={"Številka naročila"} value={currentDocumentNumber} onChange={(e) => onChangeDocumentNumber(e)} options={documentNumbers} id='documentNumbers'/>
+             <Select styles={customStyles} className='select-filterss' placeholder={"Order number"} value={currentDocumentNumber} onChange={(e) => onChangeDocumentNumber(e)} options={documentNumbers} id='documentNumbers'/>
 
-             <Select styles={customStyles} className='select-filterss' placeholder={"Prejemnik"} value={currentReceivers}  onChange={(e) => onChangeReceiver(e)} options={receivers} id='documentNumbers'/>
+             <Select styles={customStyles} className='select-filterss' placeholder={"Receiver"} value={currentReceivers}  onChange={(e) => onChangeReceiver(e)} options={receivers} id='documentNumbers'/>
 
             </div>
 
@@ -326,13 +326,13 @@ export default function HeaderOrderListing(props) {
 
           
          <span className='actions smallerr s' onClick={toggleVisibility} id="openRange">
-              <p>Izberite</p>
+              <p>Date</p>
               <MdDateRange />
          </span>   
         <div className="responsive-buttons-order">
 
          <span className='actions smallerr s' id="addOrder" onClick={openAdd}>
-              <p>Dodaj</p>
+              <p>Add</p>
               <MdAdd />
          </span>   
 
@@ -348,7 +348,7 @@ export default function HeaderOrderListing(props) {
         }
 
          <span className='actions smallerr s' id="deleteOrder" onClick={deleteOrder}>
-              <p>Pobriši</p>
+              <p>Delete</p>
               <MdDeleteOutline />
          </span>   
          </div>

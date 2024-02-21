@@ -12,14 +12,14 @@ const [tableData, setTableData] = useState(tableData1);
 
  const columnsOrder = [
 
-  { label: "Izbor", accessor: "Chosen", type: "StringValue"},
-  { label: "Skladišče", accessor: "Warehouse", type: "StringValue"},
-  { label: "Prejemnik", accessor: "Consignee", type: "StringValue"},
-  { label: "Rok dobave", accessor: "DeliveryDeadline", type: "DateTimeValue"},
+  { label: "Chosen", accessor: "Chosen", type: "StringValue"},
+  { label: "Warehouse", accessor: "Warehouse", type: "StringValue"},
+  { label: "Consignee", accessor: "Consignee", type: "StringValue"},
+  { label: "Deadline", accessor: "DeliveryDeadline", type: "DateTimeValue"},
   { label: "Status", accessor: "Status", type: "StringValue"},
-  { label: "Tip dokumenta", accessor: "DocumentType", type: "StringValue"},
-  { label: "Ključ", accessor: "Key", type: "StringValue"},
-  { label: "Sprejemnik", accessor: "Receiver", type: "StringValue"}
+  { label: "Document type", accessor: "DocumentType", type: "StringValue"},
+  { label: "Key", accessor: "Key", type: "StringValue"},
+  { label: "Receiver", accessor: "Receiver", type: "StringValue"}
   
 
  ];
@@ -27,13 +27,13 @@ const [tableData, setTableData] = useState(tableData1);
 
 
 const columnsPositions = [
-  { label: "Izbor", accessor: "Chosen", type: "StringValue"},
+  { label: "Chosen", accessor: "Chosen", type: "StringValue"},
     { label: "Ident", accessor: "Ident", type: "StringValue"},
-    { label: "Naziv", accessor: "Name", type: "StringValue"},
-    { label: "Št. artikla", accessor: "ItemID", type: "IntValue"},
-    { label: "Številka", accessor: "No", type: "IntValue"},
-    { label: "Odprto", accessor: "OpenQty", type: "DoubleValue"},
-    { label: "Naročeno", accessor: "FullQty", type: "DoubleValue"}
+    { label: "Name", accessor: "Name", type: "StringValue"},
+    { label: "Item ID", accessor: "ItemID", type: "IntValue"},
+    { label: "Position", accessor: "No", type: "IntValue"},
+    { label: "Open", accessor: "OpenQty", type: "DoubleValue"},
+    { label: "Ordered", accessor: "FullQty", type: "DoubleValue"}
   
 
     

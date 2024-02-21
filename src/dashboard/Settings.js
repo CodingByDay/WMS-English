@@ -70,32 +70,32 @@ export default function Settings() {
 
         
          <button className="btn btn-primary settingsButton dashboard" onClick = {()=>routeChange("subjects")}>
-           Subjekti
+           Subjects
            <img alt={""} src='rating.png' width={50} />
          </button>
 
          <button className="btn btn-primary settingsButton dashboard" onClick = {()=>routeChange("subject-codes")}>
-            Kode subjektov
+            Subject codes
            <img alt={""} src='source-code.png' width={50} />
          </button>
         
          <button className="btn btn-primary settingsButton dashboard" onClick = {()=>routeChange("documents")}>
-           Vrste dokumentov
+           Document type
            <img alt={""} src='format-icon.png' width={50} />
          </button>
 
          <button className="btn btn-primary settingsButton dashboard" onClick = {()=>routeChange("status")}>
-           Statusi dokumentov
+           Document status
            <img alt={""} src='document-status.png' width={50} />
          </button>
 
          <button className="btn btn-primary settingsButton dashboard" onClick = {()=>routeChange("system")}>
-           Sistem
+           System
            <img alt={""} src='settings-icon.png' width={50}/>
          </button>
 
          <button className="btn btn-primary settingsButton dashboard" onClick = {()=>routeChange("idents")}>
-          Identi
+          Idents
            <img alt={""} src='boxes.png' width={50} />
          </button>
          
@@ -136,7 +136,7 @@ export default function Settings() {
 
        
    
-   </div> 
+      </div> 
       <Footer />
       </div> 
     

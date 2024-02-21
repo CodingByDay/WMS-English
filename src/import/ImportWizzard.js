@@ -426,7 +426,7 @@ function correctDependencies(params, columnsData) {
           {'>>'}
         </button>{' '}
         <span>
-          Stran{' '}
+          Page{' '}
           <strong>
             {pageIndex + 1} od {pageOptions.length}
           </strong>{' '}

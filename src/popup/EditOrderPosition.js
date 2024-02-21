@@ -64,12 +64,12 @@ useEffect(() => {
       >
 
       <div className='quantity-form-update'>
-        <label htmlFor="quantity">Količina:</label>
-        <Input id="quantity" value={quantity} onChange={handleInputChange} className="form-control" placeholder="Vnesite količino" />  
+        <label htmlFor="quantity">Quantity:</label>
+        <Input id="quantity" value={quantity} onChange={handleInputChange} className="form-control" placeholder="Enter the quantity" />  
       </div>
 
         <center><span className='actions smallerr' onClick={handleOk} id='updateQuantity'>          
-             <p>Potrdi</p>
+             <p>Confirm</p>
                           <MdAdd />
                 </span>
         </center> 

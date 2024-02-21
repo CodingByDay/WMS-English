@@ -201,12 +201,12 @@ export default function IssuedGoods(props) {
           var data =  ListingService.createOrder(objectForAPI).then(response => { 
                     cleanFields();
                     if(response.Success) {
-                        window.showAlert("Informacija", "Uspešno kreirano", "success")
+                        window.showAlert("Information", "Created successfully", "success")
                         props.close();
                         props.render();
                       
                     } else {
-                        window.showAlert("Informacija", "Napaka v podatkih", "error")
+                        window.showAlert("Information", "Error", "error")
                         props.close();
                         props.render();
                     }
@@ -242,14 +242,14 @@ export default function IssuedGoods(props) {
 
     function getClient() {
         if(props.order) {
-            return   <Select styles={customStyles} className='select-filters-add' value={selectedClient} onChange={(e) => onChangeBuyer(e)} placeholder={"Kupec"} options={buyer} id='buyer' />
+            return   <Select styles={customStyles} className='select-filters-add' value={selectedClient} onChange={(e) => onChangeBuyer(e)} placeholder={"Buyer"} options={buyer} id='buyer' />
         }
     }
 
     function getNote() {
         if(props.order) {
             return  <div styles={customStyles} className="form-group2">
-                    <label htmlFor="acNote">Opomba</label>
+                    <label htmlFor="acNote">Remark</label>
                     <textarea className="form-control" id="acNote" rows="3"></textarea>
             </div>
         }
@@ -317,15 +317,15 @@ export default function IssuedGoods(props) {
 
 
         <div className='left-column'>
-        <Select styles={customStyles} className='select-filters-add' getOptionLabel={(option) => option.code} getOptionValue={(option) => option.code} formatOptionLabel={formatOptionLabel} value={selectedType} onChange={(e) => onChangeType(e)} placeholder={"Tip"} options={documentTypes}  id='documentType'/>
-        <Select styles={customStyles} className='select-filters-add' value={selectedWarehouse} onChange={(e) => onChangeWarehouse(e)} placeholder={"Skladišče"} options={warehouses} id='warehouse'  />
+        <Select styles={customStyles} className='select-filters-add' getOptionLabel={(option) => option.code} getOptionValue={(option) => option.code} formatOptionLabel={formatOptionLabel} value={selectedType} onChange={(e) => onChangeType(e)} placeholder={"Document type"} options={documentTypes}  id='documentType'/>
+        <Select styles={customStyles} className='select-filters-add' value={selectedWarehouse} onChange={(e) => onChangeWarehouse(e)} placeholder={"Warehouse"} options={warehouses} id='warehouse'  />
         </div>
         <div className='right-column'>
 
 
         <div id="date-picker-example" onChange={(e) => onDateChange(e)}  className="md-form md-outline input-with-post-icon datepicker" inline="true">
     
-        <input styles={customStyles} placeholder="Izberite datum" type="date" id="documentDate" className="form-control" />
+        <input styles={customStyles} placeholder="Choose the date" type="date" id="documentDate" className="form-control" />
 
         </div>
 
@@ -344,7 +344,7 @@ export default function IssuedGoods(props) {
 
 
        <center><span className='actions smallerr' onClick={createHeadDocument} id='createDocument'>          
-             <p>Potrdi</p>
+             <p>Confirm</p>
              <MdAdd />
              </span>
         </center> 

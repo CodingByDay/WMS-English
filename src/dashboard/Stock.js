@@ -226,13 +226,13 @@ export default function Stock() {
 
         <div className ="stock-container-filters">  
 
-        <Select className='select-filters-stock' styles={customStyles} placeholder={"Skladišče"} value={warehouse} onChange={handleWarehouseChange} options={warehouses} id='warehouseStock' />
-        <Select className='select-filters-stock' styles={customStyles} placeholder={"Lokacija"} value={location}  onChange={handleLocationChange} options={locations} id='locationStock'/>
+        <Select className='select-filters-stock' styles={customStyles} placeholder={"Warehouse"} value={warehouse} onChange={handleWarehouseChange} options={warehouses} id='warehouseStock' />
+        <Select className='select-filters-stock' styles={customStyles} placeholder={"Location"} value={location}  onChange={handleLocationChange} options={locations} id='locationStock'/>
         <Select className='select-filters-stock' styles={customStyles} placeholder={"Ident"} value={ident} onChange={handleIdentChange} options={idents} id='identStock'/>
 
 
 
-        <span className='actions smallerr stock' styles={customStyles} onClick={handleInventory}>Prikaži</span>
+        <span className='actions smallerr stock' styles={customStyles} onClick={handleInventory}>Show</span>
 
         </div>
 

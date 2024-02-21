@@ -217,14 +217,14 @@ $(function() {
 
     function getClient() {
         if(props.order) {
-            return <Select styles={customStyles}  className='select-filters' value={selectedClient}  onChange={(e) => onChangeBuyer(e)} placeholder={"Dobavitelj"} options={buyer} id='buyer' />
+            return <Select styles={customStyles}  className='select-filters' value={selectedClient}  onChange={(e) => onChangeBuyer(e)} placeholder={"Supplier"} options={buyer} id='buyer' />
         }
     }
 
     function getNote() {
         if(props.order) {
             return  <div className="form-group2">
-                    <label htmlFor="acNote">Opomba</label>
+                    <label htmlFor="acNote">Remark</label>
                     <textarea className="form-control" id="acNote" rows="3"></textarea>
             </div>
         }
@@ -283,12 +283,12 @@ $(function() {
                     var data =  ListingService.createOrder(objectForAPI).then(response => { 
                         cleanFields();
                         if(response.Success) {
-                            window.showAlert("Informacija", "Uspešno kreirano", "success")
-                            props.close();
+                          window.showAlert("Information", "Created successfully", "success")
+                          props.close();
                             props.render();
                         } else {
-                            window.showAlert("Informacija", "Napaka v podatkih", "error")
-                            props.close();
+                          window.showAlert("Information", "Error", "error")
+                          props.close();
                             props.render();
                         }
                 }); 
@@ -330,17 +330,17 @@ $(function() {
         <Select className='select-filters'
 
 styles={customStyles} 
-        getOptionLabel={(option) => option.code} getOptionValue={(option) => option.code} formatOptionLabel={formatOptionLabel} value={selectedType} onChange={(e) => onChangeType(e)} placeholder={"Tip"} options={documentTypes}  id='documentType'/>
+        getOptionLabel={(option) => option.code} getOptionValue={(option) => option.code} formatOptionLabel={formatOptionLabel} value={selectedType} onChange={(e) => onChangeType(e)} placeholder={"Document type"} options={documentTypes}  id='documentType'/>
         <Select
 styles={customStyles} 
-        className='select-filters' value={selectedWarehouse} onChange={(e) => onChangeWarehouse(e)} placeholder={"Skladišče"} options={warehouses} id='warehouse'  />
+        className='select-filters' value={selectedWarehouse} onChange={(e) => onChangeWarehouse(e)} placeholder={"Warehouse"} options={warehouses} id='warehouse'  />
         </div>
         <div className='right-column'>
 
 
         <div id="date-picker-example" onChange={(e) => onDateChange(e)}  className="md-form md-outline input-with-post-icon datepicker" inline="true">
 
-        <input placeholder="Izberite datum" styles={customStyles}  type="date" id="documentDate" className="form-control" />
+        <input placeholder="Choose the date" styles={customStyles}  type="date" id="documentDate" className="form-control" />
 
         </div>
 
@@ -359,7 +359,7 @@ styles={customStyles}
 
 
        <center><span className='actions smallerr' onClick={createHeadDocument} id='createDocument'>          
-             <p>Potrdi</p>
+             <p>Confirm</p>
              <MdAdd />
              </span>
         </center> 

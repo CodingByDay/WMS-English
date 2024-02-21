@@ -24,7 +24,7 @@ export default function ImportSheetChoice(props) {
         <div className="outer">
 
         <div className='header' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '2em' }}>
-            <h4>List dokumenta</h4>
+            <h4>Choose the sheet</h4>
         </div>
 
         <div className='choices'style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '5em' }}>

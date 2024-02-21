@@ -174,7 +174,7 @@ export default function Inventory(props) {
 
         <center><input placeholder="Izberite datum" type="date" id="date" className="form-control" /></center>
             <center><span className='actions smallerr' onClick={createHeadDocument} id='createDocument'>          
-             <p>Potrdi</p>
+             <p>Confirm</p>
              <MdAdd />
            </span></center> 
         </div>

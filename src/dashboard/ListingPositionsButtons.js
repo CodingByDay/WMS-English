@@ -73,19 +73,19 @@ export default function ListingPositionsButtons(props) {
         <div className="filters">
 
          <span className='actions smallerr' onClick={createPosition} id="addOrder">
-              <p>Dodaj</p>
+              <p>Add</p>
               <MdAdd />
          </span>   
 
 
          <span className='actions smallerr' id="editOrder" onClick={showModal}>
-          <p>Uredi</p>
+          <p>Edit</p>
           <MdEdit />
           </span>
 
        
          <span className='actions smallerr' id="deleteOrder" onClick={deleteOrderHead}>
-              <p>Pobriši</p>
+              <p>Delete</p>
               <MdDeleteOutline />
          </span>   
          <EditOrderPosition close={hideModal} shown = {isEditShow} object={selected} communicate = {props.communicate} />

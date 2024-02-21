@@ -166,7 +166,7 @@ export default function LocationComponent (props) {
             <div className='right-part'>
 
              <span 
-              onClick={commitPositions} className='actions smallerr'id=''>Potrdi         
+              onClick={commitPositions} className='actions smallerr'id=''>Confirm         
              <MdEdit />
              </span> 
 

@@ -122,7 +122,7 @@ export default function WorkOrder(props) {
 
             <span className='actions smallerr' onClick={createHeadDocument} id='createDocument'>   
                 
-            <p>Potrdi</p>
+            <p>Confirm</p>
                 <MdAdd />
             </span>
 

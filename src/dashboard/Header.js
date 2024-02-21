@@ -28,14 +28,14 @@ export default function Header(props) {
 
   if(pathname !== '/dashboard') {
 
-    button =  <span className='actions' onClick={() => navigate('/dashboard')}>Domov  
+    button =  <span className='actions' onClick={() => navigate('/dashboard')}>Menu  
 
     <MdHome />
 
     </span>
 
 
-    returnButton = <span className='actions' onClick={() => navigate(-1)}>Nazaj  
+    returnButton = <span className='actions' onClick={() => navigate(-1)}>Go back  
 
     <MdArrowBackIos />
 
@@ -64,7 +64,7 @@ export default function Header(props) {
                 <VersionInfo />
                 {button}
                 {returnButton}
-                <span className='actions' onClick={() => handleLogout()}>Odjava             
+                <span className='actions' onClick={() => handleLogout()}>Log out            
                 <MdLogout />
                 </span>
             </div>

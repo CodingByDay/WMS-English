@@ -106,7 +106,7 @@ function TableForge({ refresh, name, tableData }) {
         Header: (
           <button className="action-buttons white" title="Vnos" onClick={onAdd}>
             <IoAddCircleSharp />
-            Dodaj           
+            Add           
           </button>         
         ),
         accessor: 'actions',
@@ -123,7 +123,7 @@ function TableForge({ refresh, name, tableData }) {
         type: 'nothing',
       },
       {
-        Header: 'Naziv',
+        Header: 'Name',
         accessor: 'ID',
         additional: '', 
         className: 'name-column-system',
@@ -139,7 +139,7 @@ function TableForge({ refresh, name, tableData }) {
         dbType: 'String',
       },
       {
-        Header: 'Vrednost',
+        Header: 'Value',
         accessor: 'Value',
         additional: '', 
         className: 'value-column-system',
@@ -1193,7 +1193,7 @@ const idents = useMemo(
           {'>>'}
         </button>{' '}
         <span>
-          Stran{' '}
+          Page{' '}
           <strong>
             {pageIndex + 1} od {pageOptions.length}
           </strong>{' '}

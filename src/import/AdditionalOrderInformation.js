@@ -160,7 +160,7 @@ const [chosenWarehouse, setChosenWarehouse] = useState(null)
 </div>
         
         </div>
-        <button className='actions smallerr' id='confirmAdditionalInformation' onClick={() => setChosenState("position")}>Potrdi</button>
+        <button className='actions smallerr' id='confirmAdditionalInformation' onClick={() => setChosenState("position")}>Confirm</button>
 
 
 

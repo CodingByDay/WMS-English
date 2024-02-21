@@ -69,7 +69,7 @@ export default function StatusChange(props) {
 
                     <center><span className='actions smallerr status' onClick={changeStatus} id='createDocument'>   
                            
-             <p>Potrdi</p>
+             <p>Confirm</p>
              <MdAdd />
              </span></center> 
 

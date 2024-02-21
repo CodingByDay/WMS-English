@@ -224,10 +224,10 @@ export default function Listing() {
         } else {
           if(event ==="delete") {
             window.swal({
-              title: 'Potrditev',
-              text: "Ali ste sigurni da želite pobrisati pozicijo?",
+              title: 'Confirm',
+              text: "Are you sure you want to delete the position?",
               icon: 'warning',
-              buttons: ["Ne", "Ja, pobriši"],
+              buttons: ["No", "Yes, delete"],
             }).then((result) => { 
 
                   if(result) {
